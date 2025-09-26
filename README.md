@@ -10,7 +10,7 @@
 - **VS Code Integration**: `.vscode` folder includes recommended extensions and build tasks for smooth LaTeX compilation and formatting.
 - **Bibliography Support**: Set up for BibTeX referencing.
 - **Custom Class File**: `style.cls` for Deakin-specific formatting and styling.
-- **GNU Licence**: Open-source under the GNU General Public Licence (see `LICENSE`).
+- **MIT Licence**: Open-source under the MIT Licence (see `LICENSE`).
 
 ## Getting Started
 
@@ -61,7 +61,7 @@ By definition, $x^2 = x \times x$. For any real $x$, this is non-negative.
 ├── reportreferences.bib # BibTeX references
 ├── .vscode/             # VS Code settings & tasks
 ├── latex-bin/           # Build artefacts
-├── LICENSE              # GNU General Public Licence
+├── LICENSE              # MIT Licence
 └── README.md            # This file
 ```
 
@@ -73,7 +73,7 @@ By definition, $x^2 = x \times x$. For any real $x$, this is non-negative.
 
 ## Licence
 
-This project is licensed under the GNU General Public Licence. See `LICENSE` for details.
+This project is licensed under the MIT Licence. See `LICENSE` for details.
 
 ## Contributing
 
