@@ -1,0 +1,52 @@
+{
+  "latex-workshop.latex.tools": [
+      {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "--shell-escape",
+              "-pdf",
+              "-auxdir=latex-bin", // Store files here
+              "%DOC%"
+          ]
+      },
+      {
+          "name": "pdflatex",
+          "command": "pdflatex",
+          "args": [
+              "--shell-escape",
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-aux-directory=latex-bin", // Store files here
+              "%DOC%"
+          ]
+      },
+      {
+          "name": "bibtex",
+          "command": "bibtex",
+          "args": [
+              "latex-bin/%DOCFILE%" // Ensure BibTeX works with auxiliary folder
+          ],
+          "env": {}
+      }
+  ],
+  "latex-workshop.latex.clean.fileTypes": [
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.fls",
+      "*.fdb_latexmk",
+      "*.log",
+      "*.out",
+      "*.toc",
+      "*.synctex.gz",
+      "*.lof",
+      "*.lot",
+      "*.gz"
+  ],
+  "latex-workshop.latex.outDir": "" // This ensures the PDF remains in the root directory
+}

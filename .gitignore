@@ -1,0 +1,24 @@
+# ignore all generated python files
+.idea
+.gitattributes
+.git
+_minted-00_main
+
+# ignore all generated latex files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.dvi
+*.xdv
+*.lof
+*.lot
+*.xml
+*.pdf
+
+latex-bin/

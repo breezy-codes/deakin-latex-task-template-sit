@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{style}
+
+%%%-----PACKAGES------------------
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{newtxmath}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{minted}
+\usemintedstyle{colorful}
+\definecolor{custombg}{HTML}{F5F5F5}
+\AtBeginEnvironment{minted}{\renewcommand{\baselinestretch}{1.2}\selectfont}
+\setminted{fontsize=\footnotesize, style=arduino, linenos, breaklines}
+\definecolor{linkcolour}{RGB}{135,95,215}
+\usepackage[colorlinks=true, linkcolor=linkcolour, citecolor=linkcolour, urlcolor=linkcolour]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlength{\parindent}{10pt}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{pgfmath}
+\usepackage{booktabs}
+
+\graphicspath{ {figures}} %% Path to your Figure folder
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\setlength{\parskip}{1em}     % Add spacing between paragraphs
+\setlength{\parindent}{10pt}  % Indent paragraphs (set to 0pt for no indentation)
+
+\title{Report Title}
+\author{Author Name}
+\id{student ID}
+\date{date}
+\unit{Unit Code}
+\course{subtitle}
+
+
+%-------------DOCUMENT BEGIN-------------------
+\begin{document}
+\maketitle
+%========= Title Page
+
+%-----------Abstract----------
+\newpage
+\thispagestyle{plain}
+\pagenumbering{roman}
+
+%---------Table of Content, Figures and Tables--------
+\newpage
+\begin{singlespacing}
+	\tableofcontents
+\end{singlespacing}
+
+\renewcommand{\baselinestretch}{2.0}
+
+% Main body of Report
+%========= Start of Report 
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\onehalfspacing
+
+%%-------SECTIONS
+%%------ Include files for each section
+\input{01-file}
+
+%-------- Bibliography
+\newpage
+\singlespacing%
+\bibliography{reportreferences} %%All bib references are in references.bib file
+\bibliographystyle{IEEEtran}
+\end{document}
+%-------------DOCUMENT END-------------------
